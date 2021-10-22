@@ -2,6 +2,7 @@ let activityList = JSON.parse(localStorage.getItem("activity-list")) || []
 
 saveNewActivity = () => {
     let newActivity = $("#activity-input").val().trim()
+    newActivity = newActivity.charAt(0).toUpperCase() + newActivity.slice(1 , newActivity.length)
     if (newActivity ===""){
         $("#modal-error").text("activity cannot be blank")
     }else if(activityList.indexOf(newActivity) === -1) {
