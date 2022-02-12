@@ -6,9 +6,7 @@ body{
     background-position-y: center;
     background-color:silver
 }
-.hide{
-    display:none
-}
+
 #modal{
     position: fixed;
     z-index: 15; 
@@ -19,6 +17,9 @@ body{
     overflow: auto; 
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4);
+}
+.hide{
+    display:none
 }
 .modal-content{
     background-color: #fefefe;
