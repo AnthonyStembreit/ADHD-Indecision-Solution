@@ -32,10 +32,15 @@ generateDecision = (activities) => {
 $("#generate-decision").on("click", async e => {
     e.preventDefault();
     let activityArr = await doNotIncludeEvent()
-    if (activityArr.length < 1) {
-        $("#modal-error").text("must choose at least two activitys")
+    if (activityArr.length < 2) {
+        $("#modal").removeClass("hide")
+        $("#modal-message").text("Must choose at least two activities!!")
     } else {
         generateDecision(activityArr)
     }
+})
+$("#modal-btn").click(e => {
+    e.preventDefault();
+    $("#modal").addClass("hide")
 })
 
