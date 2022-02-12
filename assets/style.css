@@ -1,10 +1,10 @@
 body{
     text-align: center;
-    /* background-image: url("http://static.demilked.com/wp-content/uploads/2015/01/roads-landscape-photography-andy-lee-8.jpg");
+    /* background-image: url("http://static.demilked.com/wp-content/uploads/2015/01/roads-landscape-photography-andy-lee-8.jpg"); */
     background-repeat: no-repeat;
     background-size: cover ;
     background-position-y: center;
-    background-color:silver */
+    background-color:silver
 }
 .navbar{
     padding: 10px;
@@ -65,14 +65,75 @@ button{
 #chosen-activities{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width:100%;
+}
+.activity-check{
+    display: flex;
+    width: 20%;
+    font-size: 22px;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.activity-check input{
+    align-self: center;
+    margin: 5px;
 }
 .activity-card{
     display: flex;
-    flex-wrap: wrap;
-    width: 40%;
-    justify-content: flex-start;
-    margin-top: 10px;
-    margin-left:10%;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
     font-size: 22px;
+}
+#activity-form{
+    display: flex;
+    flex-wrap:wrap;
+    text-align: left;
+    align-content: center;
+    margin: 0px
+}
+#add-activity{
+    margin: 10px;
+    margin-bottom:0px;
+    width: 100%;
+}
+#current-activities{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+@media screen and (max-width: 1000px){
+    form{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .navbar{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: unset;
+        padding: unset;
+        justify-content: space-evenly;
+    }
+    a{
+        width: 40%;
+    }
+    #current-activities{
+        width: 100%
+    }
+    .activity-card{
+        width: 80%;
+    }
+    button{
+        height: 40px;
+        font-size: 25px;
+    }
+
 }

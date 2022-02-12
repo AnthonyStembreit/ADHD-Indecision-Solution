@@ -6,7 +6,7 @@ if (activityList === []) {
     $("#chosen-activities").empty()
     activityList.map(activity => {
         console.log(activity)
-        let card = $('<div class="activity-card"></div>`')
+        let card = $('<div class="activity-check"></div>`')
         let checkbox = $('<input type="checkbox" checked class="include-activity"/>').val(activity)
         let body = $('<label></label>').text(activity)
         card.append(checkbox, body)
