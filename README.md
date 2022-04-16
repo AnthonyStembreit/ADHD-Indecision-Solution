@@ -20,9 +20,9 @@ Users create a list of activites which is saved in local storage, the user can t
 * jQuery
 * localStorage
 
-## Questions
-
-If you have any questions about the repo, open an issue or contact me directly at stembreit@gmail.com
-
-You can find more of my work at [AnthonyStembreit](https://github.com/AnthonyStembreit/).
+## Questions?
+* [AnthonyStembreit](https://github.com/AnthonyStembreit)
+* stembreit@gmail.com
+        
+ If you have any additional question feel free to message or email me.
 
